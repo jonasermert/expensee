@@ -24,7 +24,8 @@ Der Nutzer kann noch eigene Kategorien zu den vorhandenen hinzufügen!
 
 # Die wichtigsten Ressourcen
 
-# Link Design: https://www.figma.com/file/mOJpocJKzRzWBqs9Qr5IlR/Expensee?node-id=0%3A1
+# Link Design: 
+https://www.figma.com/file/mOJpocJKzRzWBqs9Qr5IlR/Expensee?node-id=0%3A1
 
 # Link Prototype: 
 https://www.figma.com/proto/mOJpocJKzRzWBqs9Qr5IlR/Expensee?node-id=10%3A80&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A80&show-proto-sidebar=1
