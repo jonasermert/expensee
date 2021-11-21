@@ -1,0 +1,81 @@
+.sidebar{
+    
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:5;
+    background:#2B2D5B;
+    filter: drop-shadow(0 -2mm 2mm #141529);
+    @media(min-width:800px)and(max-width:3400px){
+        
+    }
+    
+    // z-index:3;
+    display:flex; //Um die Buttons zu platzieren 
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition:.5s;
+    //bg-IMG
+    background-image:url('../../img/Side.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:0vw 76vh;
+    a{ 
+        text-decoration:none; 
+        color:white;      
+        }
+    .sideText{
+        font-family:'Lato'; 
+        font-size: 1em;
+        background-color:rgba(255, 255, 255, 0); 
+        padding:11px 0% 0 33%;
+        transition:.5s;
+           
+    }
+    .button_container{
+        height:50%; //die Höhe des Divs der die Nav-Buttons beinhaltet
+        margin-top:20%;
+        div{
+            margin:45px 0%; //der Abstand zwischen den Buttons
+        }
+        
+    }
+    .closeButton{
+        position:absolute;
+        top:2vh;
+        right:2vh;
+        font-size:1.8em;
+        color:white;
+        font-weight:100;
+    }
+   
+}
+.hamburger{
+    color:#F63535;
+    font-size:1.5em;
+    padding:0 5%;
+    }
+.menu{
+    background-color:#31326C;
+    filter: drop-shadow(0 -2mm 2mm #141529);
+    height:7%;
+    width:100vw;
+    position:fixed;
+    top:0;
+    display:flex;
+    align-items:center;
+    z-index:5;
+    @media(min-width:800px)and(max-width:3400px){
+        
+    }
+    .headerTitle{
+        color:white;
+        font-weight:400;
+        font-size:1.2em;
+        padding:0;
+        @media(min-width:800px)and(max-width:3400px){
+            margin-left:36vw;
+        }
+    }
+}

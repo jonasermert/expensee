@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+nav {
+    ul {
+    list-style: none;
+    padding-top: 45%;
+    li {
+        text-align: center;
+        a {
+        text-decoration: none;
+
+        div {
+            color: white;
+            box-shadow: 0 0.1em 0.2em rgba(8, 8, 8, 0.911);
+            font-size: 0.9em;
+            margin: 0% 5% 5% 5%;
+            padding: 4% 5%;
+        }
+        }
+    }
+    }
+}
+
+p{
+    color:white;
+    font-size:1em;
+padding-left:15%;
+    padding-top:20%;
+}

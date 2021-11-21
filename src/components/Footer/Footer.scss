@@ -1,0 +1,52 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+  height: 7vh;
+  width: 100%;
+
+  #footerBg {
+    position: relative;
+    bottom: 245%;
+    z-index: 2;
+    right:20%;
+  }
+
+  .nav-Bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    filter: drop-shadow(0 -1mm 1mm #141529);
+  }
+
+  .footer-container {
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .wallet {
+        position: absolute;
+        top: -55%;
+        left: 5%;
+        img {
+          width: 30px;
+        }
+      }
+      .homebtn {
+        position: absolute;
+        top: -30%;
+        left: 41.7%;
+      }
+      .charts {
+        position: absolute;
+        top: 8%;
+        left: 75%;
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+}

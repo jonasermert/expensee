@@ -1,0 +1,62 @@
+#ModalPopUp {
+  
+  color: #fff;
+  width: 300px;
+  height: 380px;
+  text-align: center;
+  //   background-color: #2b2d5b;
+  background-color: rgb(111, 161, 235);
+  border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  img {
+    position: relative;
+    top: -30px;
+  }
+  #line {
+    // position: relative;
+    top: 5px;
+  }
+  .circle1 {
+    position: absolute;
+    top: 35%;
+    height: 10px;
+    width: 20px;
+    border-radius: 15px 15px 0 0;
+    background-color: #16172e;
+    transform: rotate(90deg);
+    left: -5px;
+  }
+  .circle2 {
+    position: absolute;
+    top: 35%;
+    height: 10px;
+    width: 20px;
+    border-radius: 15px 15px 0 0;
+    background-color: #16172e;
+    transform: rotate(-90deg);
+    right: -5px;
+  }
+  section {
+    padding: 7%;
+    text-align: left;
+    span {
+      color: rgb(95, 95, 130);
+    }
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price {
+      margin-top: 15%;
+    }
+    .price::after {
+      content: ' €';
+    }
+    .categorie {
+      margin-top: 10%;
+    }
+  }
+}

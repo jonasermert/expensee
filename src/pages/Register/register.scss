@@ -1,0 +1,84 @@
+*:focus {
+    outline: 0;
+}
+
+.registerh1{
+    color:#ffffff;
+    font-size:4em;
+    text-align:center;
+    font-weight:500;
+    margin-top: 18.5%;
+    padding-bottom: 4%;
+}
+.registerh3{
+    color:#ffffff;
+    font-size:1em;
+    text-align: center;
+    font-weight:500;
+}
+
+.regis {
+    padding: 10%;
+    .registerMail {
+        .conti{
+            margin-bottom: 7.5%;
+        }
+        .infield{
+            width: 95%;
+        }
+        input,
+        button {
+            width: 100%;
+            height: 56px;
+            background-color: #232450;
+            border-style: none;
+            margin-top: 12%;
+            color: #fff;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+        .reg{
+            margin: 2px 0 0 3px;
+            color:#ffffff;
+            font-size:.8em;
+            text-align: center;
+            font-weight:500;
+            display: flex;
+            div{
+                margin-left: 10px;
+                color:#ffffff;
+                text-decoration: underline;
+            }
+        }
+        .signUpB{
+            margin-top: 10%;
+            background: #2b2d5b;
+            box-shadow: 3px 3px 6px 2px #141627;
+            margin-top: 20%;
+            font-size: 1em;
+            position: relative;
+            z-index: 999;
+            padding-left: 0px;
+            text-align: center;
+        }
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.767);
+        font-size: 1.2em;
+    }
+}
+.waveconti {
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    height: 7vh;
+    width: 100%;
+    #footerBg {
+        position: relative;
+        bottom: 245%;
+        z-index: 2;
+        right:20%;
+    }
+}
+

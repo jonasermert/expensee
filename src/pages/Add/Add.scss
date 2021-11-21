@@ -1,0 +1,231 @@
+*:focus {
+  outline: 0;
+}
+.wallet {
+  padding: 10%;
+  color: #ffffff;
+
+  h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 5% 0;
+    text-align: start;
+  }
+  .add-form {
+    select,
+    input,
+    button {
+      width: 100%;
+      height: 56px;
+      background-color: #232450;
+      border-style: none;
+      margin-top: 12%;
+      color: #ffffff;
+      border-radius: 5px;
+      padding-left: 5%;
+    }
+    select:focus,
+    input:focus,
+    button:focus {
+      outline: none;
+    }
+    input {
+      width: 95%;
+    }
+    button {
+      background: #2b2d5b;
+      box-shadow: 3px 3px 6px 2px #141627;
+      margin-top: 24%;
+      font-size: 1em;
+      position: relative;
+      z-index: 999;
+      
+    }
+    input[type='datetime-local'] {
+      padding: 0 13px 0 20px;
+      width: 90%;
+    }
+    input[type='datetime-local']::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      filter: invert(0.9);
+    }
+    select {
+      font-size: 1em;
+      padding-left: 20px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+
+  ::placeholder {
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+}
+// ===================MDOAL=================
+.Modalbg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.404);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  #ModalPopUp,
+  #errorPopUp {
+    margin: 0 0 0 20px;
+    color: #fff;
+    width: 330px;
+    height: 450px;
+    text-align: center;
+    background-color: #2b2d5b;
+    border-radius: 10px;
+    position: absolute;
+    top: 150px;
+    #sucessImg {
+      position: relative;
+      top: -30px;
+      animation: magic 1s ease-in-out alternate;
+    }
+    @keyframes magic {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    #line {
+      position: relative;
+      top: 14px;
+    }
+    .circle1 {
+      position: absolute;
+      top: 35%;
+      height: 10px;
+      width: 20px;
+      border-radius: 15px 15px 0 0;
+      background-color: #16172e;
+      transform: rotate(90deg);
+      left: -5px;
+    }
+    .circle2 {
+      position: absolute;
+      top: 35%;
+      height: 10px;
+      width: 20px;
+      border-radius: 15px 15px 0 0;
+      background-color: #16172e;
+      transform: rotate(-90deg);
+      right: -5px;
+    }
+    #message {
+      font-size: 1.5rem;
+      font-weight: 300;
+      position: relative;
+      top: 0px;
+      margin-bottom: 2%;
+    }
+  }
+  .infoContainer {
+    padding: 0 10%;
+    text-align: left;
+    position: relative;
+    top: 0px;
+    font-size: 1.2rem;
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p {
+      width: 30%;
+      font-weight: 400;
+      display: block;
+      text-align: left;
+    }
+
+    #opacity {
+      color: #ffffff;
+      opacity: 0.5;
+    }
+    span {
+      line-height: 23px;
+    }
+
+    .price::after {
+      content: ' €';
+    }
+    #showDc {
+      font-size: 1.2rem;
+    }
+    #showBig {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// ===================MDOALError=================
+#errorPopUp {
+  text-align: center;
+  background-color: #2b2d5b;
+  height: 380px;
+  width: 300px;
+  border-radius: 10px;
+
+  #errorImg {
+    position: relative;
+    top: 25px;
+    width: 35%;
+    height: 15vh;
+    animation: scale 1s ease-in-out alternate;
+    margin-bottom: 2%;
+  }
+  @keyframes scale {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  #errortitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    top: 70px;
+    
+    margin-bottom: 2%;
+  }
+  h4 {
+    position: relative;
+    top: 90px;
+  }
+}
+
+//=============================AUTOCOMPLETE_STYLE======================
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #232450 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  font-size: 1em;
+
+  &:hover{
+    transition: background-color 5000s #232450 ease-in-out 0s;
+  }
+  
+}
+

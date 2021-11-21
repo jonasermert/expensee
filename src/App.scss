@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); //Lato
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+nav {
+  ul {
+    list-style: none;
+    padding-top: 45%;
+    li {
+      text-align: center;
+      a {
+        text-decoration: none;
+
+        div {
+          color: white;
+          box-shadow: 0 0.1em 0.2em rgba(8, 8, 8, 0.911);
+          font-size: 0.3em;
+          margin: 0% 5% 5% 5%;
+          padding: 4% 5%;
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-color: #2b2d5b;
+}
+// #footerBg:not(.Home, .transaktionItem) {
+//   display: block;
+// }

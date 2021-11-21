@@ -1,0 +1,89 @@
+
+
+    .Einkommen{
+        .Collapsible__trigger{
+        background: linear-gradient(90deg,#F63535,#FF009D);
+        margin:3% 3% 0 3%;
+        @media(min-width:800px) and (max-width:1920px){
+            margin: 5% 20% 0 20%;
+        }
+      
+        }
+    }
+    .Ausgaben{
+        .Collapsible__trigger{
+        background-color:#515FEB;
+        margin:3% 3% 0 3%;
+        @media(min-width:800px) and (max-width:1920px){
+            margin: 5% 20% 0 20%;
+        }
+        }
+    }
+    .Sparen{
+        .Collapsible__trigger{
+        background-color:#EFB722;
+        margin:3% 3% 0 3%;
+        @media(min-width:800px) and (max-width:1920px){
+            margin: 5% 20% 0 20%;
+        }
+        }
+    }
+    .Sonstiges{
+        .Collapsible__trigger{
+        background-color:#95989A;
+        margin:3% 3% 0 3%;
+        @media(min-width:800px) and (max-width:1920px){
+            margin: 5% 20% 0 20%;
+        }
+        }
+    }
+    .Collapsible {
+        background-color: #2B2D5B; }
+      
+      .Collapsible__contentInner {
+        padding:0 3% 10px 3%;
+        border-top: 0; 
+        
+    }
+
+          .Collapsible__contentInner p:last-child {
+            margin-bottom: 0; }
+      
+      .Collapsible__trigger {
+        display: block;
+        text-decoration: none;
+        position: relative;
+        padding: 5%;
+        font-size:1.2em;
+        border-radius:2px;
+        text-align:center;
+        color: white;
+        @media(min-width:800px)and(max-width:3400px){
+            padding: 2%
+        }
+    }
+      
+//=======================CollapsItem=================
+
+.CollapsItem{
+    color:white;
+    background-color:#32377C;
+    .flex{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:6% 3%;
+        border-bottom:#2B2D5B 1px solid;
+        h5{
+            font-weight:300;
+            font-size:1em;
+        }
+    }
+}
+
+.collapsContainer{
+    padding-bottom:20%;
+    padding-top:2%;
+}
+
+
