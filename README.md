@@ -33,10 +33,6 @@ https://www.figma.com/proto/mOJpocJKzRzWBqs9Qr5IlR/Expensee?node-id=10%3A80&scal
 # Assets:
 https://reactchartjs.github.io/react-chartjs-2/#/ || https://www.chartjs.org/
 
-# Presentation
-https://www.youtube.com/watch?v=wK-VU_BRswc
-
-
 
 # Getting Started with Create React App
 
