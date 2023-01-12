@@ -36,7 +36,7 @@ https://reactchartjs.github.io/react-chartjs-2/#/ || https://www.chartjs.org/
 Translated with www.DeepL.com/Translator (free version)
 
 
-###########################################################################################################################################
+######################################################################
 
 
 #  SuperCode Abschlussprojekt
