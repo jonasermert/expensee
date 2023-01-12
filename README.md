@@ -1,3 +1,44 @@
+# SuperCode final project
+# November 2021
+
+# Short project description:
+The Expansee app is designed to allow users to keep track of their costs!
+This app is designed for mobile use. The user can organise his expenses / income and thus get an overview of why his account is always so empty at the end of the month. 😦💸
+
+# Technologies that can be used:
+HTML/CSS, Git/Github, MongoDB, express.js with ReactJS(MERN stack) or express.js with ejs.
+
+# This should be noted:
+Organise yourselves well in the group, how you want to distribute your tasks, which communication channels you want to use and pay attention to time management.
+
+# Phase 1
+The basic requirement is to create your own database with the necessary schemas.
+The statistics should work.
+The website is designed for mobile.
+
+# Phase 2
+You programme a login area with which users can log in.
+
+# Phase 3
+Users can still add their own categories to the existing ones!
+
+# The most important resources
+
+# Link design: 
+https://www.figma.com/file/mOJpocJKzRzWBqs9Qr5IlR/Expensee?node-id=0%3A1
+
+# Link Prototype: 
+https://www.figma.com/proto/mOJpocJKzRzWBqs9Qr5IlR/Expensee?node-id=10%3A80&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A80&show-proto-sidebar=1
+
+# Assets:
+https://reactchartjs.github.io/react-chartjs-2/#/ || https://www.chartjs.org/
+
+Translated with www.DeepL.com/Translator (free version)
+
+
+###########################################################################################################################################
+
+
 #  SuperCode Abschlussprojekt
 #  November 2021
 
