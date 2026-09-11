@@ -1,28 +1,18 @@
-import { onSnapshot, collection } from '@firebase/firestore';
-import { useEffect, useState,useContext } from 'react'
-import { db } from '../../Service/firebase'
 import './Collaps.scss'
 import { AmountContext } from '../../contexts/AmountContext'
-import React from 'react';
-import Collapsible from 'react-collapsible';
+import { useContext } from 'react';
 import CollapsItem from './CollapsItem'
 
-const App = () => {
-    const [finance, setFinance] = useState([])
-    const{einkommen,ausgaben,sparen,sonstiges,gehalt,sonstigeEinnahmen,lebensmittel,shopping,wohnen,mobilitaet,freizeit,restaurant,versicherung,geldanlage,sonstigesSparen}=useContext(AmountContext)
+const Collapsible = ({ trigger, children }) => (
+  <details className="Collapsible">
+    <summary className="Collapsible__trigger">{trigger}</summary>
+    <div className="Collapsible__contentInner">{children}</div>
+  </details>
+);
 
-    // console.log(finance)
-    useEffect(
-        () => 
-            onSnapshot(collection(db, "finance"),(snapshot) => 
-                setFinance(snapshot.docs.map((doc) => doc.data())),
-            ),
+const Collaps = () => {
+  const {einkommen,ausgaben,sparen,sonstiges,gehalt,sonstigeEinnahmen,lebensmittel,shopping,wohnen,mobilitaet,freizeit,restaurant,versicherung,geldanlage,sonstigesSparen}=useContext(AmountContext)
 
-        []
-    );
-
-
-    
   return (
       
       <div className="collapsContainer">
@@ -62,4 +52,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Collaps;

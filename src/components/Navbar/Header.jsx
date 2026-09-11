@@ -1,7 +1,6 @@
 import './Header.scss'
-import {Link, Navigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {useState} from "react";
-import { firebase } from '../../Service/firebase'
 import { useAuth } from '../../contexts/AuthContext';
 
 

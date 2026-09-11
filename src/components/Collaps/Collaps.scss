@@ -58,9 +58,15 @@
         border-radius:2px;
         text-align:center;
         color: white;
-        @media(min-width:800px)and(max-width:3400px){
+        cursor: pointer;
+        list-style: none;
+        @media (min-width: 800px) and (max-width: 3400px) {
             padding: 2%
         }
+    }
+
+    .Collapsible__trigger::-webkit-details-marker {
+        display: none;
     }
       
 //=======================CollapsItem=================
@@ -85,5 +91,3 @@
     padding-bottom:20%;
     padding-top:2%;
 }
-
-

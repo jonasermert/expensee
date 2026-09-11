@@ -1,16 +1,19 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
 import './DonutChart.scss'
 import { AmountContext } from '../../contexts/AmountContext'
-import { useEffect, useState,useContext } from 'react';
-// import axios from 'axios';
+import { useContext } from 'react';
+
+ChartJS.register(ArcElement, Legend, Tooltip);
 
 const DoughnutChart = () => {
-  const{einkommen,setEinkommen,ausgaben,setAusgaben,sparen,setSparen,sonstiges,setSonstiges}=useContext(AmountContext)
+  const { einkommen, ausgaben, sparen, sonstiges } = useContext(AmountContext);
+  const kontostand = Number(einkommen) - Number(ausgaben) - Number(sparen) - Number(sonstiges);
   return (
     <div className='chart'>
         <div className="konto"> 
-        {(einkommen-ausgaben-sparen-sonstiges).toFixed(0)+'€'}
+        {`${kontostand.toFixed(0)}€`}
              
         </div>
       <div className='chartText'>
@@ -22,7 +25,7 @@ const DoughnutChart = () => {
           datasets: [
             {
               label: '# of votes',
-              data: [einkommen-ausgaben-sparen-sonstiges,ausgaben,sparen,sonstiges],
+              data: [Math.max(kontostand, 0), ausgaben, sparen, sonstiges],
               backgroundColor: [
                 'rgba(246, 53, 53, 1)',
                 'rgba(81, 95, 235, 1)',

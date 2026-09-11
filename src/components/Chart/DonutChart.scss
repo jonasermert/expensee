@@ -1,6 +1,6 @@
 .chart{ 
     margin: 10% 0 0% 0;
-    @media(min-width:800px)and(max-width:3400px){
+    @media (min-width: 800px) and (max-width: 3400px) {
         margin:8.5% 0% 0% 35%;
         width: 30vw;
     }
@@ -18,7 +18,7 @@
        left:33.7%;
        z-index:-1;
        font-size:1.5em;
-       @media(min-width:800px)and(max-width:3400px){
+       @media (min-width: 800px) and (max-width: 3400px) {
             top:20%;
             left:43.5%;
        }

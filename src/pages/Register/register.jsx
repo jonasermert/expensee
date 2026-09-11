@@ -1,6 +1,6 @@
 import "./register.scss";
-import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext'
 import shapeImg from '../../img/shape.png'
 import Bg from '../../img/background.png'
@@ -8,14 +8,18 @@ import Bg from '../../img/background.png'
 const Register = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [error, setError] = useState("")
 
-    const { register, currentUser } = useAuth()
+    const { register } = useAuth()
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        //console.log(email, password)
-        register(email, password)
-        
+        setError('')
+        try {
+            await register(email, password)
+        } catch {
+            setError('Der Account konnte nicht erstellt werden. Bitte prüfe deine Eingaben.')
+        }
     }
 
 
@@ -46,6 +50,7 @@ const Register = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     /><br />
                 </div>
+                {error && <p role="alert">{error}</p>}
                 <button className="signUpB" type="submit">Sign Up</button>
             </form>
 
