@@ -6,10 +6,10 @@ const Button = () => {
         <nav>
         <ul>
             <li>
-                <Link to="./Login/login.js"><div>Login mit Email</div></Link>
+                <Link to="/"><div>Login mit Email</div></Link>
             </li>
             <li>
-                <Link to="./Login/register.js"><div>Account erstellen mit Email</div></Link>
+                <Link to="/register"><div>Account erstellen mit Email</div></Link>
             </li>
         </ul>
     </nav>

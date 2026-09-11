@@ -1,5 +1,6 @@
 import "./welcome.scss";
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext'
 import Bg from '../../img/background.png'
 
@@ -15,11 +16,11 @@ const { currentUser } = useAuth()
         <div>
             <div className="welconti">
                 <h2 className="welc">Willkomen</h2>
-                <img className="userimg" src={ currentUser.photoURL} alt="" />
-                <h3 className="welcomeUser">{ currentUser.displayName }</h3>
-                <a href="home">
+                {currentUser.photoURL && <img className="userimg" src={currentUser.photoURL} alt="Profil" />}
+                <h3 className="welcomeUser">{currentUser.displayName || currentUser.email}</h3>
+                <Link to="/home">
                     <div className="losg">
-                        <p className="texti">Los geht's</p></div></a>
+                        <p className="texti">Los geht's</p></div></Link>
             </div>
             <div className="waveconti">
             <img id="footerBg" src={Bg}  alt="" />

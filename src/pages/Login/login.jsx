@@ -1,6 +1,6 @@
 import "./login.scss";
-import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext'
 import Bg from '../../img/background.png'
 
@@ -8,14 +8,18 @@ import Bg from '../../img/background.png'
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
-const { login, signInWithGoogle, signInWithTwitter, signInWithGitHub, currentUser } = useAuth()
+const { login, signInWithGoogle, signInWithTwitter, signInWithGitHub } = useAuth()
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    //console.log(email, password)
-    login(email, password)
-    
+    setError('');
+    try {
+        await login(email, password)
+    } catch {
+        setError('Die Anmeldung ist fehlgeschlagen. Bitte prüfe deine Zugangsdaten.')
+    }
 }
 
 
@@ -24,7 +28,7 @@ const handleSubmit = (e) => {
         <div className="mail" >
             <h3 className="LoginH3">Willkommen bei</h3>
             <h1 className="LoginH1">Expensee</h1>
-            <form className="loginMail" action="">
+            <form className="loginMail" onSubmit={handleSubmit}>
                 <input 
                     className="infield"
                     type="email" 
@@ -41,7 +45,8 @@ const handleSubmit = (e) => {
                     /><br />
                 <div className="reg">Noch nicht registriert? <Link to="/register"><div>Sign Up</div></Link></div>
 
-                <button className="subB" type="submit" onClick={handleSubmit}>Login</button>
+                {error && <p role="alert">{error}</p>}
+                <button className="subB" type="submit">Login</button>
                 <p>oder Login mit</p>
                     <div className="buttons">
                         <div className="container">
@@ -76,4 +81,3 @@ const handleSubmit = (e) => {
 }
 
 export default Login;
-
